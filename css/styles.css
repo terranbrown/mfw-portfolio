@@ -31,6 +31,7 @@ nav h1{
     display: inline;
     line-height: 50px;
     font-size: 20pt;
+    font-weight: 700;
 }
 
 nav li > a{
@@ -64,4 +65,31 @@ nav li.active{
 }
 .car_img3{
     background-image: url('../img/workspace.jpg');
+}
+
+/* ABOUT SECTION */
+#about{
+    height: 550px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#about h1{
+    color: #7316b1;
+    text-shadow: 2px 2px #000;
+    font-weight: bold;
+}
+
+#about > section{
+    margin-bottom: 10px;
+}
+
+.head_shot{
+    height: 400px;
+    box-shadow: 5px 5px 15px #000;
+}
+
+#about p{
+    letter-spacing: 0.1em;
+    text-align: justify;
 }
