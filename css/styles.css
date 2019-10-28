@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat&display=swap');
+/* 
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+ */
+
+/* GLOBAL */
+
+.h_text{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.p_text{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.white_text{
+    color:white;
+    /* REMOVE: there is certainly a better way to do this. */
+}
+
+/* NAVBAR SECTION */
+.navbar{
+    margin-bottom: 0px;
+}
+
+.navbar-brand{
+    padding: 0px;
+}
+    /* TODO: INDENT LOGO */
+nav h1{
+    display: inline;
+    line-height: 50px;
+    font-size: 20pt;
+}
+
+nav li > a{
+    color: #7316b1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav li a:hover{
+    background-color: #7316b18a;
+    color: #7316b1;
+}
+
+nav li.active{
+    background-color: #7316b1;
+    color: white;
+}
+
+/* CAROUSEL */
+.carousel-inner .item {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.car_img1{
+    background-image: url('../img/mountain.jpg');
+}
+.car_img2{
+    background-image: url('../img/tubas.jpg');
+}
+.car_img3{
+    background-image: url('../img/workspace.jpg');
+}
