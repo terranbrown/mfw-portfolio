@@ -27,6 +27,10 @@
 .navbar-brand{
     padding: 0px;
 }
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+    margin-left: 0;
+}
     /* TODO: INDENT LOGO */
 nav h1{
     display: inline;
@@ -104,7 +108,7 @@ nav li.active{
     background-size: cover;
 }
 
-#design h1 h2{
+#design h1, h2{
     color: white;
     text-shadow: 2px 2px #000;
 }
@@ -114,23 +118,45 @@ nav li.active{
     margin-bottom: 10px;
 }
 
-.project > img{
-    filter: grayscale(100%);
-    transition: filter 1s, filter 1s;
+.project{
+    height: 250px;
 }
+
+.project > img{
+    /* filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); */
+    -webkit-transition: -webkit-filter 1s;
+    transition: -webkit-filter 1s;
+}
+
+/* -webkit-transition: 1s -webkit-filter linear;
+transition: 1s filter linear, 1s -webkit-filter linear; */
 
 .project > img:hover{
-    filter: drop-shadow(5px 5px 10px gray);
+    filter: drop-shadow(5px 5px 10px gray) grayscale(20%);
     /* DROP SHADOW DOESN'T WORK YET */
-    filter: grayscale(20%);
+    /* filter: grayscale(20%); */
+    -webkit-filter: drop-shadow(5px 5px 10px gray) grayscale(20%);
+    /* -webkit-filter: drop-shadow(5px 5px 10px gray); */
 }
 
-img.special{
-    filter: invert(50%);
-    /* FIX TRANSITION */
+/* img.special{
+    filter: invert(45%);
     transition: filter 1s;
+} */
+
+/* .special:hover{
+    filter: invert(20%);
+} */
+
+/* MUSIC SECTION */
+#music{
+    height: 720px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    background-image: url(../img/treble-cleff-staff2.png);
 }
 
-.special:hover{
-    filter: invert(10%);
+.note{
+
 }
