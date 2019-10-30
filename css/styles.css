@@ -108,7 +108,7 @@ nav li.active{
     background-size: cover;
 }
 
-#design h1, h2{
+#design > section > h1, #design > div > h2{
     color: white;
     text-shadow: 2px 2px #000;
 }
@@ -119,10 +119,14 @@ nav li.active{
 }
 
 .project{
-    height: 250px;
+    height: 400px;
 }
 
-.project > img{
+.project > a > img{
+    height: 325px;
+}
+
+.project > a{
     /* filter: grayscale(100%);
     -webkit-filter: grayscale(100%); */
     -webkit-transition: -webkit-filter 1s;
@@ -132,7 +136,7 @@ nav li.active{
 /* -webkit-transition: 1s -webkit-filter linear;
 transition: 1s filter linear, 1s -webkit-filter linear; */
 
-.project > img:hover{
+.project > a:hover{
     filter: drop-shadow(5px 5px 10px gray) grayscale(20%);
     /* DROP SHADOW DOESN'T WORK YET */
     /* filter: grayscale(20%); */
@@ -157,6 +161,13 @@ transition: 1s filter linear, 1s -webkit-filter linear; */
     background-image: url(../img/treble-cleff-staff2.png);
 }
 
-.note{
-
+#music > section > h1, #music > div > h2{
+    color: black;
+    text-shadow: 1px 1px #7316b1;
 }
+
+/* .note{
+
+} */
+
+/* CONTACT SECTION */
