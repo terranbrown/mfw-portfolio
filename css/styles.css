@@ -107,7 +107,7 @@ nav li.active > a{
 
 /* DESIGN SECTION */
 #design{
-    height: 550px;
+    height: 600px;
     margin-top: 25px;
     margin-bottom: 10px;
     background-image: url(../img/purple-background.jpg);
@@ -115,9 +115,10 @@ nav li.active > a{
     background-size: cover;
 }
 
-#design > section > h1, #design > div > h2{
+#design > section > h1, #design > .container > .project > h2{
     color: white;
     text-shadow: 2px 2px #000;
+    padding-bottom: 25px;
 }
 
 #design > section{
